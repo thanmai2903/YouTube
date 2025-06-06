@@ -2,32 +2,32 @@ import React from "react";
 
 const commentsData = [
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [],
   },
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [
       {
-        name: "wd",
+        name: "Lakshmi Thanmai",
         text: "Hello",
         replies: [
           {
-            name: "wd",
+            name: "Lakshmi Thanmai",
             text: "Hello",
             replies: [
               {
-                name: "wd",
+                name: "Lakshmi Thanmai",
                 text: "Hello",
                 replies: [
                   {
-                    name: "wd",
+                    name: "Lakshmi Thanmai",
                     text: "Hello",
                     replies: [
                       {
-                        name: "wd",
+                        name: "Lakshmi Thanmai",
                         text: "Hello",
                         replies: [],
                       },
@@ -42,28 +42,28 @@ const commentsData = [
     ],
   },
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [],
   },
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [],
   },
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [
       {
-        name: "wd",
+        name: "Lakshmi Thanmai",
         text: "Hello",
         replies: [],
       },
     ],
   },
   {
-    name: "wd",
+    name: "Lakshmi Thanmai",
     text: "Hello",
     replies: [],
   },
@@ -89,7 +89,7 @@ const CommentsList = ({ comments }) => {
   return comments.map((comment, index) => (
     <div key={index}>
       <Comment data={comment} />
-      <div className="pl-5 border border-l-black ml-5">
+      <div className="pl-5 border-l-black ml-5">
         <CommentsList comments={comment.replies} />
       </div>
     </div>

@@ -9,7 +9,6 @@ const Head = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const dispatch = useDispatch();
-
   const searchCache = useSelector((store) => store.search);
 
   useEffect(() => {
@@ -69,7 +68,7 @@ const Head = () => {
           />
         </a>
       </div>
-      <div className="col-span-10 px-14">
+      <div className="col-span-10 px-14 relative">
         <div>
           <input
             className="px-5 w-1/2 border rounded-l-full border-gray-400 p-2"
@@ -84,10 +83,13 @@ const Head = () => {
           </button>
         </div>
         {showSuggestions && (
-          <div className="fixed border-gray-100 border bg-white py-2 px-2 w-[37rem] shadow-sm rounded-lg">
+          <div className="absolute border-gray-100 border bg-white py-2 px-2 w-[37rem] shadow-sm rounded-lg">
             <ul>
               {suggestions.map((s) => (
-                <li key={s} className="shadow-sm py-2 px-3 hover:bg-gray-100">
+                <li
+                  key={s}
+                  className="cursor-pointer shadow-sm py-2 px-3 hover:bg-gray-100"
+                >
                   🔍{s}
                 </li>
               ))}
