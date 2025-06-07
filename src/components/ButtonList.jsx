@@ -16,7 +16,7 @@ const items = [
 ];
 const ButtonList = () => {
   return (
-    <div className=" overflow-x-auto w-full">
+    <div className=" w-full object-fill">
       <div className="flex whitespace-nowrap">
         {items.map((item, i) => (
           <Button key={item} name={item} />

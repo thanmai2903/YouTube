@@ -1,5 +1,4 @@
 import react, { Component, useEffect, useState } from "react";
-import SideBar from "./SideBar";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
