@@ -1,1 +1,1 @@
-Live Streming at: you-tube-nu.vercel.app
+Live Streming at: https://you-tube-nu.vercel.app/
